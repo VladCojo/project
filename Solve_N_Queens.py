@@ -61,3 +61,18 @@ class Solution():
         for i in state:
             string = '. ' * i + 'Q' + ' .' * (n - i - 1)
             ret.append(string)
+            
+opt = 0 
+     
+while True:
+    print("\n Choose: \n")
+    print("1. N Queen problem\n")
+    print("2. Exit program\n")
+    opt = input("Option: ")
+    
+    if opt == 1:
+        pass
+    elif opt == 2:
+        break;
+    else:
+        print("\nINVALID OPTION\n")
