@@ -1,4 +1,19 @@
-def SolveNQueens(n):
+"""
+[1, 3, 0, 2]
+. Q . .                    
+. . . Q
+Q . . .
+. . Q .
+"""
+class Solution:
+    
+    def solve():
+        pass
+    
+    
+    def SolveNQueens(self, n):
+        pass
+    
     
     def is_valid_state(state):
         pass
@@ -9,5 +24,4 @@ def SolveNQueens(n):
     def search(state, solutions):
         pass
     
-    def solve():
-        pass
+    
