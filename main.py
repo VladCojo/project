@@ -5,23 +5,25 @@
 Q . . .
 . . Q .
 """
-class Solution:
-    
-    def solve():
-        pass
-    
-    
+class Solution():
+   
+    #SOLVE
     def SolveNQueens(self, n):
-        pass
+        solutions = []
+        state = []
+        self.search(state, solutions, n)
+        return solutions
     
+    #IS VALID STATE
+    def is_valid_state(self, state, n):
+        return len(state) == n
     
-    def is_valid_state(state):
-        pass
-    
-    def get_candidates(state):
+    #GET CANDIDATES
+    def get_candidates(self, state, n):
         pass 
     
-    def search(state, solutions):
+    #SEARCH
+    def search(self, state, solutions, n):
         pass
     
     
