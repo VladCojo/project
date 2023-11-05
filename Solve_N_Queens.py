@@ -41,6 +41,16 @@ class Solution():
     
     
     def search(self, state, solutions, n):
-        pass
+        if self.is_valid_state(state, n):
+            solutions.append(state.copy())
+            return
+        
+        for candidate in self.get_candidates(state, n):
+            # recurse
+            state.append(candidate)
+            self.search(state,solutions,n)
+            state.pop()
+            
+    
     
     
