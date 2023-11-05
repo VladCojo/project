@@ -36,6 +36,9 @@ class Solution():
             # discard diagonals
             candidates.discard(col + dist)  
             candidates.discard(col - dist)
+            
+        return candidates
+    
     
     def search(self, state, solutions, n):
         pass
