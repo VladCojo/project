@@ -74,7 +74,8 @@ while True:
     opt = input("Option: ")
     
     if opt == '1':
-        n = int(input("\nChoose the number of queens: "))
+        n = int(input("\nChoose the number of queens(the number must be >= 4): "))
+        
         solutions = queens.SolveNQueens(n)
         for solution in solutions:
             for row in solution:
