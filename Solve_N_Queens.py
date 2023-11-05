@@ -1,3 +1,4 @@
+import sys
 """
 [1, 3, 0, 2]
 . Q . .                    
@@ -22,7 +23,7 @@ class Solution():
     
     def get_candidates(self, state, n):
         if not state:
-            return range(n) 
+            return list(range(n)) 
         
         # find the next position in state to populate
         position = len(state)
@@ -37,12 +38,12 @@ class Solution():
             candidates.discard(col + dist)  
             candidates.discard(col - dist)
             
-        return candidates
+        return list(candidates)
     
     
     def search(self, state, solutions, n):
         if self.is_valid_state(state, n):
-            state_string = self.state_to_string(state)
+            state_string = self.state_to_string(state, n)
             solutions.append(state_string)
             return
         
@@ -61,18 +62,28 @@ class Solution():
         for i in state:
             string = '. ' * i + 'Q' + ' .' * (n - i - 1)
             ret.append(string)
+        return ret
             
 opt = 0 
-     
+n = 0  
+queens = Solution() 
 while True:
     print("\n Choose: \n")
     print("1. N Queen problem\n")
     print("2. Exit program\n")
     opt = input("Option: ")
     
-    if opt == 1:
-        pass
-    elif opt == 2:
-        break;
+    if opt == '1':
+        n = int(input("\nChoose the number of queens: "))
+        solutions = queens.SolveNQueens(n)
+        for solution in solutions:
+            for row in solution:
+                print(row) 
+            print()   
+            
+    elif opt == '2':
+        sys.exit()
+        
     else:
         print("\nINVALID OPTION\n")
+        
