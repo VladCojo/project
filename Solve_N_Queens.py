@@ -42,7 +42,8 @@ class Solution():
     
     def search(self, state, solutions, n):
         if self.is_valid_state(state, n):
-            solutions.append(state.copy())
+            state_string = self.state_to_string(state)
+            solutions.append(state_string)
             return
         
         for candidate in self.get_candidates(state, n):
@@ -51,6 +52,12 @@ class Solution():
             self.search(state,solutions,n)
             state.pop()
             
-    
-    
-    
+            
+    def state_to_string(self, state, n):
+        # ex: [1, 3, 0, 1]
+        # output: [".Q..","...Q","Q...","..Q."]
+
+        ret = []
+        for i in state:
+            string = '. ' * i + 'Q' + ' .' * (n - i - 1)
+            ret.append(string)
