@@ -1,6 +1,7 @@
 #Dockerfile, Image, Container
-FROM python:3.12
+#docker run -t -i  python-queens (pt a accepta input)
+FROM python:latest
 
 ADD Solve_N_Queens.py .
 
-CMD [ "python", "./Solve_N_Queens.py" ]
+CMD [ "python","-u", "-i", "./Solve_N_Queens.py" ]
