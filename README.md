@@ -1,6 +1,7 @@
 # Steps
 1. Clone repository
-2. Type in the terminal: docker build -t proiectulmeu . 
+2. Type in the terminal: docker build -t proiectulmeu .
+   
    **docker build-> This command is used to build a Docker image.**
 
    **-t proiectulmeu-> This flag is used to tag the resulting image with a name. In this case, the name is set to "proiectulmeu." The -t flag stands for "tag."**
