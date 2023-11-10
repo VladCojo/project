@@ -16,7 +16,7 @@ class Solution():
         negDiag = set() # r-c
         
         res = []
-        board = [["."]*n for i in range(n)]
+        board = [[" . "]*n for i in range(n)]
         
         def backtrack(r):
             if r == n:
@@ -31,14 +31,14 @@ class Solution():
                 col.add(c) 
                 posDiag.add(r + c)   
                 negDiag.add(r - c)
-                board[r][c] = "Q"
+                board[r][c] = " Q "
                 
                 backtrack(r+1)
                 
                 col.remove(c) 
                 posDiag.remove(r + c)   
                 negDiag.remove(r - c)
-                board[r][c] = "."
+                board[r][c] = " . "
         backtrack(0)
         return res
           
