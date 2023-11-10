@@ -1,11 +1,11 @@
-#Steps
+# Steps
 1. Clone repository
 2. Type in the terminal: docker build -t proiectulmeu . 
-    docker build-> This command is used to build a Docker image.
+   ** docker build-> This command is used to build a Docker image.**
 
-    -t proiectulmeu-> This flag is used to tag the resulting image with a name. In this case, the name is set to "proiectulmeu." The -t flag stands for "tag."
+   ** -t proiectulmeu-> This flag is used to tag the resulting image with a name. In this case, the name is set to "proiectulmeu." The -t flag stands for "tag."**
 
-    .-> The dot at the end represents the build context. It specifies the location of the Dockerfile and any files that are used during the build process. In this case, it assumes that the Dockerfile is in the current directory.
+   ** .-> The dot at the end represents the build context. It specifies the location of the Dockerfile and any files that are used during the build process. In this case, it assumes that the Dockerfile is in the current directory.**
  
 docker run --rm -it --name <my-running-app> proiectulmeu
 
