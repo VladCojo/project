@@ -19,7 +19,10 @@ class Solution():
         board = [["."]*n for i in range(n)]
         
     def backtrack(r):
-        
+        if r == n:
+            copy = ["".join(row) for row in board]
+            res.append(copy)
+            return
           
           
           
