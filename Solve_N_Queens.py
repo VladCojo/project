@@ -87,4 +87,4 @@ while True:
         
     else:
         print("\nINVALID OPTION\n")
-        
+        print("\nXXXXXXXXXXXXXXXXXX\n")
