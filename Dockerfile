@@ -5,8 +5,8 @@ FROM python:latest
 WORKDIR /usr/src/myapp
 
 
-COPY myapp.py .
+COPY Solve_N_Queens.py .
 
 
 
-CMD ["python", "myapp.py"]
+CMD ["python", "Solve_N_Queens.py"]
