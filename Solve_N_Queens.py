@@ -7,7 +7,8 @@ Q . . .
 . . Q .
 """
 class Solution():
-   
+   # posDiag: r+c
+   # negDiag: r-c
     
     def SolveNQueens(self, n):
         
