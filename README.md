@@ -15,8 +15,11 @@
   **--rm-> This flag automatically removes the container when it exits. It's often used for short-lived containers to avoid cluttering your system with stopped     containers.**
 
   **-it-> These flags combine two options:**
+  
   **-i or --interactive-> Keeps STDIN open even if not attached, allowing you to interact with the container.**
+  
   **-t or --tty-> Allocates a pseudo-TTY, which is useful for an interactive shell.**
+  
   **--name <my-running-app>-> This option allows you to assign a name to your container, in this case, <my-running-app>. Naming containers can make it easier to manage them.**
 
   **proiectulmeu: This is the name or ID of the Docker image you want to run. Replace it with the actual name or ID of your Docker image.**
