@@ -11,8 +11,20 @@ class Solution():
    # negDiag: r-c
     
     def SolveNQueens(self, n):
+        col = set()
+        posDiag = set() # r+c
+        negDiag = set() # r-c
         
-        pass
+        res = []
+        board = [["."]*n for i in range(n)]
+        
+    def backtrack(r):
+        
+          
+          
+          
+          
+          
             
 opt = 0 
 n = 0  
