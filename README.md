@@ -23,3 +23,5 @@
   **--name <my-running-app>-> This option allows you to assign a name to your container, in this case, <my-running-app>. Naming containers can make it easier to manage them.**
 
   **proiectulmeu: This is the name or ID of the Docker image you want to run. Replace it with the actual name or ID of your Docker image.**
+
+  check
