@@ -1,6 +1,9 @@
 # Steps
 1. Clone repository
-2. Type in the terminal: docker build -t proiectulmeu .
+
+2. Open the cloned repository in terminal
+
+3. Type in the terminal: docker build -t proiectulmeu .
    
    **docker build-> This command is used to build a Docker image.**
 
@@ -8,7 +11,7 @@
 
    **.-> The dot at the end represents the build context. It specifies the location of the Dockerfile and any files that are used during the build process. In this case, it assumes that the Dockerfile is in the current directory.**
  
-3. Type in the terminal: docker run --rm -it --name <my-running-app> proiectulmeu
+4. Type in the terminal: docker run --rm -it --name <my-running-app> proiectulmeu
 
  **docker run-> This command is used to run a Docker container.**
 
